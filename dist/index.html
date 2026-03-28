@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+  FILE: index.html
+  ────────────────
+  Vite's entry HTML file.  Vite injects the compiled JS bundle
+  via the <script type="module"> tag at build time.  The only
+  element we care about is <div id="root"> — React mounts here.
+
+  The Google Fonts <link> tags load our two typefaces:
+    • Syne         — geometric, characterful body / heading font
+    • IBM Plex Mono — monospaced font for financial figures
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanceOS — Personal Budget Tracker</title>
+
+    <!-- Typography: loaded before first render to avoid FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-Dv8cNsQH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DJerfQje.css">
+  </head>
+  <body>
+    <!--
+      React mounts here.
+      ReactDOM.createRoot(document.getElementById('root')) in main.jsx
+      references this element.
+    -->
+    <div id="root"></div>
+
+    <!-- Vite replaces this with the compiled + tree-shaken bundle -->
+  </body>
+</html>
